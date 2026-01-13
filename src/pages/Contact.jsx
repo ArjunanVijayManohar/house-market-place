@@ -25,8 +25,6 @@ function Contact() {
 
     getLandlord();
   }, [params.landlordId]);
-  console.log(searchParams.get('listingName'));
-  
 
   const onChange = (e) => setMessage(e.target.value);
 
@@ -61,7 +59,9 @@ function Contact() {
                 "listingName"
               )}&body=${message}`}
             >
-              <button type='button' className="primaryButton">Send Message</button>
+              <button type="button" className="primaryButton">
+                Send Message
+              </button>
             </a>
           </form>
         </main>
